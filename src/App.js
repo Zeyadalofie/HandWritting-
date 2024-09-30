@@ -1,13 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './component/Main'
+import React, { useEffect, useState } from 'react';
+import DragAndDrop from './component/DragAndDrop';
+import * as tf from '@tensorflow/tfjs';
+
 
 function App() {
-  return (
-    <div className="App">
-      <Home className="Home"/>
-    </div>
-  );
-}
+  const [model, setModel] = useState(null);
 
-export default App;
+
+  // Load the TensorFlow.js model the component mounts 
+  useEffect(() =>{
+    
+  })
+}
